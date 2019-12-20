@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package exercício2;
+
+/**
+ *
+ * @author Marino
+ */
+public class Gerente extends Empregado{
+    private String nomeGerencia;
+
+    public String getNomeGerencia() {
+        return nomeGerencia;
+    }
+
+    public void setNomeGerencia(String nomeGerencia) {
+        this.nomeGerencia = nomeGerencia;
+    }
+
+    @Override
+    public String toString() {
+        return " O Nome do Gerente é: " + super.getNome() + " A Idade do Gerente é: " + super.getIdade() + " Matrícula Nome da Gerência: " + this.getNomeGerencia() + " Valor do INSS do Gerente é: " + super.getvalorInss();
+    }
+    
+}
