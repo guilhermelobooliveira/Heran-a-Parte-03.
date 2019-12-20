@@ -1,0 +1,37 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package exercício2;
+
+/**
+ *
+ * @author Marino
+ */
+public class Cliente extends Pessoa {
+    private double valorDivida;
+    private int anoNascim;
+
+    public double getValorDivida() {
+        return valorDivida;
+    }
+
+    public void setValorDivida(double valorDivida) {
+        this.valorDivida = valorDivida;
+    }
+
+    public int getAnoNascim() {
+        return anoNascim;
+    }
+
+    public void setAnoNascim(int anoNascim) {
+        this.anoNascim = anoNascim;
+    }
+
+    @Override
+    public String toString() {
+        return " O Nome do Cliente é: " + super.getNome() + " A Idade do Cliente é: " + super.getIdade() + " O Sexo do Cliente é: " + super.getSexo() + " O Valor da Dívida é: " + this.valorDivida + " O Ano de Nascimento do Cliente é: " + this.anoNascim;
+    }
+    
+}
