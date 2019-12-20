@@ -1,0 +1,37 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package exercício2;
+
+/**
+ *
+ * @author Marino
+ */
+public class Vendedor extends Empregado {
+    private double valorVendas;
+    private int qntVendas;
+
+    public double getValorVendas() {
+        return valorVendas;
+    }
+
+    public void setValorVendas(double valorVendas) {
+        this.valorVendas = valorVendas;
+    }
+
+    public int getQntVendas() {
+        return qntVendas;
+    }
+
+    public void setQntVendas(int qntVendas) {
+        this.qntVendas = qntVendas;
+    }
+
+    @Override
+    public String toString() {
+        return " O Nome do Vendedor é: " + super.getNome() + " O Salário é: " + super.getSalario() + " O Valor das Vendas é: " + this.valorVendas + " Quantidade de Vendas do Vendedor: " + this.qntVendas;
+    }
+    
+}
